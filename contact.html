@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EM Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { navy: '#0F172A', primary: '#2563EB', gold: '#C9A227', light: '#F8FAFC' } } }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        #mobile-menu.open { max-height: 400px; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-xs text-slate-400 border-b border-white/10 hidden md:flex">
+            <div class="flex gap-6">
+                <a href="mailto:allan@emventures.in" class="hover:text-gold transition">allan@emventures.in</a>
+                <a href="tel:+918779651617" class="hover:text-gold transition">+91 87796 51617</a>
+            </div>
+            <p>Bhusawal, Maharashtra, India</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-white">EM <span class="text-gold">Ventures</span></a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="services.html" class="hover:text-gold transition">Services</a>
+                <a href="contact.html" class="text-gold">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden md:block text-gold text-sm font-semibold hover:underline">Schedule a Consultation →</a>
+            <button class="md:hidden text-2xl text-white" id="menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-navy border-t border-white/10 px-6">
+            <div class="flex flex-col py-4 space-y-3 font-medium text-slate-300">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="services.html" class="hover:text-gold transition">Services</a>
+                <a href="contact.html" class="text-gold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-16 px-6 bg-navy text-white -mt-px">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Let's Build a Strong Business Partnership</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto">Whether you're a startup, growing business, or established company, EM Ventures is ready to support your operational needs with professional outsourcing solutions.</p>
+        </div>
+    </section>
+
+    <section class="py-12 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <form id="contact-form" class="space-y-4">
+            <input type="text" name="name" placeholder="Name" required class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-gold outline-none">
+            <input type="text" name="company" placeholder="Company Name" required class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-gold outline-none">
+            <input type="email" name="email" placeholder="Email" required class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-gold outline-none">
+            <input type="tel" name="phone" placeholder="Phone" required class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-gold outline-none">
+            <select name="service" required class="w-full p-4 border rounded-xl bg-white focus:ring-2 focus:ring-gold outline-none text-slate-600">
+                <option value="" disabled selected>Service Required</option>
+                <option value="bpo-callcenter">Global BPO &amp; Call Center Operations</option>
+                <option value="enterprise-it">Enterprise IT &amp; Digital Transformation</option>
+                <option value="growth-revenue">Growth &amp; Revenue Operations</option>
+                <option value="data-backoffice">Data &amp; Back-Office Infrastructure</option>
+                <option value="staffing">Strategic Staffing &amp; Recruitment</option>
+            </select>
+            <textarea name="message" placeholder="Message" required class="w-full p-4 border rounded-xl h-32 focus:ring-2 focus:ring-gold outline-none"></textarea>
+            <button type="submit" class="w-full bg-navy text-white py-4 rounded-xl font-bold hover:bg-slate-800">Submit</button>
+            <p id="form-status" class="text-sm text-center"></p>
+        </form>
+        <div>
+            <h2 class="text-3xl font-bold text-navy mb-6">Get In Touch</h2>
+            <p class="text-slate-600 mb-2">
+                <a href="mailto:allan@emventures.in" class="hover:text-gold transition">allan@emventures.in</a>
+            </p>
+            <p class="text-slate-600 mb-2">
+                <a href="tel:+918779651617" class="hover:text-gold transition">+91 87796 51617</a>
+            </p>
+            <p class="text-slate-600 mt-6 leading-relaxed">
+                Plot No. 14 &amp; 15 Blocks,<br>
+                Mahakal Chowk, Ring Road,<br>
+                Bhusawal, Maharashtra 425201<br>
+                India
+            </p>
+            <div class="flex gap-4 mt-6">
+                <a href="https://www.linkedin.com/company/127544002/" target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-navy text-white hover:bg-gold hover:text-navy transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/17auSEY3XU/" target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-navy text-white hover:bg-gold hover:text-navy transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/em_ventures_official?igsh=MmQ1djBqNjlybDU0" target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-navy text-white hover:bg-gold hover:text-navy transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-slate-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+                <div>
+                    <a href="index.html" class="text-xl font-bold text-white">EM <span class="text-gold">Ventures</span></a>
+                    <p class="mt-4 text-sm leading-relaxed">EM Ventures helps businesses work smarter through reliable outsourcing, enterprise IT, and dedicated support solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Address</h4>
+                    <p class="text-sm leading-relaxed">Plot No. 14 &amp; 15 Blocks,<br>Mahakal Chowk, Ring Road,<br>Bhusawal, Maharashtra 425201<br>India</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Hours</h4>
+                    <p class="text-sm leading-relaxed">Monday – Saturday<br>09:00 – 18:00 IST</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Contact</h4>
+                    <p class="text-sm leading-relaxed">
+                        <a href="tel:+918779651617" class="hover:text-gold transition">+91 87796 51617</a><br>
+                        <a href="mailto:allan@emventures.in" class="hover:text-gold transition">allan@emventures.in</a>
+                    </p>
+                    <div class="flex gap-4 mt-4 text-base">
+                        <a href="https://www.linkedin.com/company/127544002/" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/17auSEY3XU/" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/em_ventures_official?igsh=MmQ1djBqNjlybDU0" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 text-xs gap-2">
+                <p>© 2026 EM Ventures. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-gold transition">Legal Notice</a>
+                    <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- TAWK.TO LIVE CHAT WIDGET -->
+<!-- IMPORTANT: Replace YOUR_PROPERTY_ID below with your own Tawk.to Property ID.
+     Get yours free at https://www.tawk.to — Administration > Channels > Chat Widget > Widget Code -->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+</body>
+</html>

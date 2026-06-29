@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | EM Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { navy: '#0F172A', primary: '#2563EB', gold: '#C9A227', light: '#F8FAFC' } } }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .fade-in-up { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
+        .fade-in-up.is-visible { opacity: 1; transform: translateY(0); }
+        #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        #mobile-menu.open { max-height: 400px; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur transition-all" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-xs text-slate-400 border-b border-white/10 hidden md:flex">
+            <div class="flex gap-6">
+                <a href="mailto:allan@emventures.in" class="hover:text-gold transition">allan@emventures.in</a>
+                <a href="tel:+918779651617" class="hover:text-gold transition">+91 87796 51617</a>
+            </div>
+            <p>Bhusawal, Maharashtra, India</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-white">EM <span class="text-gold">Ventures</span></a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="services.html" class="text-gold">Services</a>
+                <a href="contact.html" class="hover:text-gold transition">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden md:block text-gold text-sm font-semibold hover:underline">Schedule a Consultation →</a>
+            <button class="md:hidden text-2xl text-white" id="menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-navy border-t border-white/10 px-6">
+            <div class="flex flex-col py-4 space-y-3 font-medium text-slate-300">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="services.html" class="text-gold">Services</a>
+                <a href="contact.html" class="hover:text-gold transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-6 bg-navy text-white -mt-px">
+        <div class="max-w-5xl mx-auto text-center fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Multi-Profile Solutions Portfolio</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto">Turnkey, enterprise-grade offshore operations across critical corporate pillars tailored for international markets.</p>
+        </div>
+    </section>
+
+    <section class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy mb-16 fade-in-up">Five practices,<br>one signature.</h2>
+        <div class="border-t border-slate-200">
+            <div class="flex items-start gap-8 py-8 border-b border-slate-200 fade-in-up">
+                <span class="text-gold font-mono text-sm pt-1">01</span>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Global BPO &amp; Call Center Operations</h3>
+                    <p class="text-slate-600 max-w-2xl">High-touch, omnichannel Customer Experience (CX) centers, specialized technical support, and premium frontline brand representation.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-8 py-8 border-b border-slate-200 fade-in-up">
+                <span class="text-gold font-mono text-sm pt-1">02</span>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Enterprise IT &amp; Digital Transformation</h3>
+                    <p class="text-slate-600 max-w-2xl">Sourcing and implementing intelligent software workflows, CRM integrations, and advanced process automation.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-8 py-8 border-b border-slate-200 fade-in-up">
+                <span class="text-gold font-mono text-sm pt-1">03</span>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Growth &amp; Revenue Operations</h3>
+                    <p class="text-slate-600 max-w-2xl">Dedicated outsourcing for Lead Generation, Appointment Setting, and deep Prospect Research to keep your sales pipeline full.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-8 py-8 border-b border-slate-200 fade-in-up">
+                <span class="text-gold font-mono text-sm pt-1">04</span>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Data &amp; Back-Office Infrastructure</h3>
+                    <p class="text-slate-600 max-w-2xl">Secure, high-accuracy CRM Management, advanced Data Entry, and comprehensive administrative support.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-8 py-8 fade-in-up">
+                <span class="text-gold font-mono text-sm pt-1">05</span>
+                <div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Strategic Staffing &amp; Recruitment</h3>
+                    <p class="text-slate-600 max-w-2xl">Tailored talent acquisition pipelines to source, vet, and integrate skilled offshore professionals into your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- HOW WE WORK -->
+<section class="relative py-24 px-6 overflow-hidden bg-navy">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('images/how-we-work-bg.jpg')"></div>
+    <div class="absolute inset-0 bg-navy/85"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-4 fade-in-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">How We <span class="text-gold">Work.</span></h2>
+            <p class="text-slate-300 max-w-md">We follow a streamlined outsourcing process to ensure smooth transition and completion of your project.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-10">
+                <div class="fade-in-up">
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-4xl font-bold text-slate-500">01</span>
+                        <h3 class="text-xl font-bold text-white">Establish Contact</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm border-b border-white/10 pb-6">Customer fills up the inquiry form and receives a call or email from the sales team.</p>
+                </div>
+                <div class="fade-in-up">
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-4xl font-bold text-slate-500">02</span>
+                        <h3 class="text-xl font-bold text-white">Requirement Analysis</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm border-b border-white/10 pb-6">Requirement analysis, ballpark estimate, approval, execute pilot project.</p>
+                </div>
+                <div class="fade-in-up">
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-4xl font-bold text-slate-500">03</span>
+                        <h3 class="text-xl font-bold text-white">Pricing &amp; Contracting</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm border-b border-white/10 pb-6">Confirm pricing, proposal where required, contracting &amp; SLA sign-off.</p>
+                </div>
+                <div class="fade-in-up">
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-4xl font-bold text-slate-500">04</span>
+                        <h3 class="text-xl font-bold text-white">Project Initiation</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm border-b border-white/10 pb-6">Resource deployment &amp; training, project kick-off meeting.</p>
+                </div>
+                <div class="fade-in-up">
+                    <div class="flex items-baseline gap-4 mb-2">
+                        <span class="text-4xl font-bold text-slate-500">05</span>
+                        <h3 class="text-xl font-bold text-white">Ongoing Support &amp; Optimization</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm">Continuous monitoring, performance tuning, and dedicated support as your project scales.</p>
+                </div>
+            </div>
+
+            <div class="fade-in-up flex justify-center">
+<div class="flow5-diagram">
+    <div class="flow5-circle">
+        <div class="flow5-circle-inner"><span>EM</span></div>
+    </div>
+
+    <svg class="flow5-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="50" y1="50" x2="50.00" y2="22.00" />
+        <line x1="50" y1="50" x2="76.63" y2="41.35" />
+        <line x1="50" y1="50" x2="66.46" y2="72.65" />
+        <line x1="50" y1="50" x2="33.54" y2="72.65" />
+        <line x1="50" y1="50" x2="23.37" y2="41.35" />
+    </svg>
+
+    <div class="flow5-node" style="left:50.00%; top:12%;" tabindex="0">
+        <span class="flow5-dot"></span>
+        <div class="flow5-box"><span class="flow5-number">01</span></div>
+        <p class="flow5-label">Establish<br>Contact</p>
+    </div>
+
+    <div class="flow5-node" style="left:86.14%; top:38.26%;" tabindex="0">
+        <span class="flow5-dot"></span>
+        <div class="flow5-box"><span class="flow5-number">02</span></div>
+        <p class="flow5-label">Requirement<br>Analysis</p>
+    </div>
+
+    <div class="flow5-node" style="left:72.34%; top:80.74%;" tabindex="0">
+        <span class="flow5-dot"></span>
+        <div class="flow5-box"><span class="flow5-number">03</span></div>
+        <p class="flow5-label">Pricing &amp;<br>Contracting</p>
+    </div>
+
+    <div class="flow5-node" style="left:27.66%; top:80.74%;" tabindex="0">
+        <span class="flow5-dot"></span>
+        <div class="flow5-box"><span class="flow5-number">04</span></div>
+        <p class="flow5-label">Project<br>Initiation</p>
+    </div>
+
+    <div class="flow5-node" style="left:13.86%; top:38.26%;" tabindex="0">
+        <span class="flow5-dot"></span>
+        <div class="flow5-box"><span class="flow5-number">05</span></div>
+        <p class="flow5-label">Ongoing<br>Support</p>
+    </div>
+</div>
+
+<style>
+.flow5-diagram {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+.flow5-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.flow5-lines line {
+    stroke: #94a3b8;
+    stroke-width: 0.3;
+    vector-effect: non-scaling-stroke;
+}
+
+.flow5-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 46%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: conic-gradient(
+        from -90deg,
+        #C9A227 0deg 72deg,
+        #D9B84A 72deg 144deg,
+        #C9A227 144deg 216deg,
+        #D9B84A 216deg 288deg,
+        #C9A227 288deg 360deg
+    );
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+.flow5-circle-inner {
+    width: 38%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #0F172A;
+    border: 1.5px solid #C9A227;
+    display: grid;
+    place-items: center;
+}
+
+.flow5-circle-inner span {
+    color: #C9A227;
+    font-weight: 700;
+    font-size: clamp(12px, 3vw, 16px);
+    font-family: sans-serif;
+}
+
+.flow5-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    width: 30%;
+    min-width: 90px;
+    outline: none;
+}
+
+.flow5-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #94a3b8;
+    margin-bottom: 6px;
+    transition: background 0.2s ease;
+}
+
+.flow5-box {
+    background: #0F172A;
+    border: 1px solid #C9A227;
+    border-radius: 8px;
+    padding: 8px 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flow5-number {
+    color: #C9A227;
+    font-weight: 700;
+    font-size: clamp(13px, 2vw, 16px);
+    font-family: sans-serif;
+}
+
+.flow5-label {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: clamp(11px, 1.6vw, 13px);
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.4;
+    margin: 8px 0 0;
+}
+
+.flow5-node:hover .flow5-box,
+.flow5-node:focus-visible .flow5-box {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.3);
+}
+
+.flow5-node:hover .flow5-dot,
+.flow5-node:focus-visible .flow5-dot {
+    background: #C9A227;
+}
+
+@media (max-width: 480px) {
+    .flow5-diagram { max-width: 360px; }
+    .flow5-node { min-width: 78px; }
+}
+</style>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="bg-navy py-20 text-center text-white px-6">
+        <h2 class="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
+        <a href="contact.html" class="bg-gold text-navy px-8 py-3 rounded-lg font-bold inline-block mt-2 hover:bg-yellow-500 transition">Talk to Us</a>
+    </section>
+
+    <footer class="bg-navy text-slate-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+                <div>
+                    <a href="index.html" class="text-xl font-bold text-white">EM <span class="text-gold">Ventures</span></a>
+                    <p class="mt-4 text-sm leading-relaxed">Integrated Business Process Outsourcing solutions for entrepreneurs and growing companies, in Switzerland and internationally.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Address</h4>
+                    <p class="text-sm leading-relaxed">Plot No. 14 &amp; 15 Blocks,<br>Mahakal Chowk, Ring Road,<br>Bhusawal, Maharashtra 425201<br>India</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Hours</h4>
+                    <p class="text-sm leading-relaxed">Monday – Saturday<br>09:00 – 18:00 IST</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Contact</h4>
+                    <p class="text-sm leading-relaxed">
+                        <a href="tel:+918779651617" class="hover:text-gold transition">+91 87796 51617</a><br>
+                        <a href="mailto:allan@emventures.in" class="hover:text-gold transition">allan@emventures.in</a>
+                    </p>
+                    <div class="flex gap-4 mt-4 text-base">
+                        <a href="https://www.linkedin.com/company/127544002/" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/17auSEY3XU/" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/em_ventures_official?igsh=MmQ1djBqNjlybDU0" target="_blank" rel="noopener" class="hover:text-gold transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 text-xs gap-2">
+                <p>© 2026 EM Ventures. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-gold transition">Legal Notice</a>
+                    <a href="#" class="hover:text-gold transition">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- TAWK.TO LIVE CHAT WIDGET -->
+<!-- IMPORTANT: Replace YOUR_PROPERTY_ID below with your own Tawk.to Property ID.
+     Get yours free at https://www.tawk.to — Administration > Channels > Chat Widget > Widget Code -->
+<script type="text/javascript">
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+(function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+})();
+</script>
+</body>
+</html>
