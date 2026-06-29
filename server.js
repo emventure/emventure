@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serves index.html, about.html, services.html, contact.html, script.js automatically
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 // ---- CONFIGURE THESE via environment variables (set in Render dashboard, or a local .env file) ----
 const FOUNDER_EMAIL = process.env.FOUNDER_EMAIL || 'allan@emventures.in';
