@@ -133,188 +133,226 @@
             </div>
         </div>
 
-        <div class="fade-in-up flex justify-center">
-<div class="flow-diagram flow-4">
-    <div class="flow-circle">
-        <div class="flow-circle-inner">
-            <span>EM</span>
-        </div>
+<div class="fade-in-up flex justify-center">
+
+<div class="compass-diagram">
+
+    <div class="center-circle">
+        <img src="em-ventures-logo.png" alt="EM Ventures Logo">
     </div>
 
-    <div class="flow-node flow-node--top" tabindex="0">
-        <div class="flow-connector"><span class="flow-dot"></span></div>
-        <div class="flow-box"><span class="flow-number">01</span></div>
-        <p class="flow-label">Personalized<br>Service</p>
+    <div class="line vertical top"></div>
+    <div class="line vertical bottom"></div>
+    <div class="line horizontal left"></div>
+    <div class="line horizontal right"></div>
+
+    <div class="card top">
+        <span>01</span>
+        <h4>Personalized Service</h4>
     </div>
 
-    <div class="flow-node flow-node--right" tabindex="0">
-        <div class="flow-connector"><span class="flow-dot"></span></div>
-        <div class="flow-box"><span class="flow-number">02</span></div>
-        <p class="flow-label">Dedicated<br>Support</p>
+    <div class="card right">
+        <span>02</span>
+        <h4>Dedicated Support</h4>
     </div>
 
-    <div class="flow-node flow-node--bottom" tabindex="0">
-        <div class="flow-connector"><span class="flow-dot"></span></div>
-        <div class="flow-box"><span class="flow-number">03</span></div>
-        <p class="flow-label">Quality<br>Focused</p>
+    <div class="card bottom">
+        <span>03</span>
+        <h4>Quality Focused</h4>
     </div>
 
-    <div class="flow-node flow-node--left" tabindex="0">
-        <div class="flow-connector"><span class="flow-dot"></span></div>
-        <div class="flow-box"><span class="flow-number">04</span></div>
-        <p class="flow-label">Flexible<br>Solutions</p>
+    <div class="card left">
+        <span>04</span>
+        <h4>Flexible Solutions</h4>
     </div>
+
 </div>
 
-<style>
-.flow-diagram {
-    position: relative;
-    width: 100%;
-    max-width: 460px;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
+</div>
+
+.compass-diagram{
+    position:relative;
+    width:560px;
+    height:560px;
+    margin:auto;
 }
 
-.flow-circle {
-    position: absolute;
-    width: 62%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background: conic-gradient(
-        from 0deg,
-        #C9A227 0deg 90deg,
-        #D9B84A 90deg 180deg,
-        #C9A227 180deg 270deg,
-        #D9B84A 270deg 360deg
-    );
-    display: grid;
-    place-items: center;
+.center-circle{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:170px;
+    height:170px;
+    background:#0F172A;
+    border:4px solid #C9A227;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
-.flow-circle::before,
-.flow-circle::after {
-    content: "";
-    position: absolute;
-    background: #ffffff;
+.center-circle img{
+    width:115px;
 }
 
-.flow-circle::before {
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.line{
+    position:absolute;
+    background:#C9A227;
 }
 
-.flow-circle::after {
-    width: 2px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+.vertical{
+    width:2px;
+    left:50%;
+    transform:translateX(-50%);
 }
 
-.flow-circle-inner {
-    position: relative;
-    z-index: 1;
-    width: 36%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    background: #0F172A;
-    display: grid;
-    place-items: center;
+.horizontal{
+    height:2px;
+    top:50%;
+    transform:translateY(-50%);
 }
 
-.flow-circle-inner span {
-    color: #C9A227;
-    font-weight: 700;
-    font-size: clamp(12px, 3vw, 16px);
-    font-family: sans-serif;
+.top{
+    top:40px;
 }
 
-.flow-node {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    outline: none;
+.bottom{
+    bottom:40px;
 }
 
-.flow-node--top    { top: 0; left: 50%; transform: translateX(-50%); }
-.flow-node--right  { top: 50%; right: 0; transform: translateY(-50%); flex-direction: column; }
-.flow-node--bottom { bottom: 0; left: 50%; transform: translateX(-50%); flex-direction: column-reverse; }
-.flow-node--left   { top: 50%; left: 0; transform: translateY(-50%); flex-direction: column; }
-
-.flow-connector {
-    width: 1px;
-    height: 14%;
-    background: #94a3b8;
-    position: relative;
+.vertical.top{
+    top:125px;
+    height:110px;
 }
 
-.flow-node--bottom .flow-connector { order: 2; }
-
-.flow-dot {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #94a3b8;
-    left: 50%;
-    bottom: -3px;
-    transform: translateX(-50%);
+.vertical.bottom{
+    bottom:125px;
+    height:110px;
 }
 
-.flow-node--bottom .flow-dot { bottom: auto; top: -3px; }
-
-.flow-box {
-    background: #0F172A;
-    border: 1px solid #C9A227;
-    border-radius: 8px;
-    padding: 10px 22px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.horizontal.left{
+    left:120px;
+    width:110px;
 }
 
-.flow-number {
-    color: #C9A227;
-    font-weight: 700;
-    font-size: clamp(13px, 2.2vw, 16px);
-    font-family: sans-serif;
+.horizontal.right{
+    right:120px;
+    width:110px;
 }
 
-.flow-label {
-    color: #0F172A;
-    font-weight: 600;
-    font-size: clamp(11px, 1.8vw, 13px);
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 1.4;
-    margin: 8px 0 0;
+.card{
+    position:absolute;
+    width:170px;
+    padding:22px;
+    background:#0F172A;
+    border:2px solid #C9A227;
+    border-radius:18px;
+    text-align:center;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
 
-.flow-node--bottom .flow-label { margin: 0 0 8px; }
-
-.flow-node:hover .flow-box,
-.flow-node:focus-visible .flow-box {
-    transform: scale(1.06);
-    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.25);
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(201,162,39,.35);
 }
 
-.flow-node:hover .flow-dot,
-.flow-node:focus-visible .flow-dot {
-    background: #C9A227;
+.card span{
+    color:#C9A227;
+    font-size:28px;
+    font-weight:700;
+    display:block;
+    margin-bottom:12px;
 }
 
-@media (max-width: 480px) {
-    .flow-diagram { max-width: 320px; }
+.card h4{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    line-height:1.4;
 }
-</style>
-        </div>
-    </div>
-</section>
+
+.card.top{
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.card.bottom{
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.card.left{
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.card.right{
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.card.left:hover,
+.card.right:hover{
+    transform:translateY(-50%) scale(1.05);
+}
+
+.card.top:hover,
+.card.bottom:hover{
+    transform:translateX(-50%) scale(1.05);
+}
+
+@media(max-width:768px){
+
+.compass-diagram{
+    width:350px;
+    height:620px;
+}
+
+.card{
+    width:150px;
+    padding:18px;
+}
+
+.card.right{
+    top:200px;
+    right:0;
+}
+
+.card.left{
+    top:200px;
+    left:0;
+}
+
+.center-circle{
+    width:140px;
+    height:140px;
+}
+
+.center-circle img{
+    width:90px;
+}
+
+.vertical.top{
+    top:105px;
+    height:80px;
+}
+
+.vertical.bottom{
+    bottom:105px;
+    height:80px;
+}
+
+.horizontal.left,
+.horizontal.right{
+    width:60px;
+}
+}
 
 
     <!-- TESTIMONIALS -->
