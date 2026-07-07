@@ -19,8 +19,10 @@ const SMTP_PASS = process.env.SMTP_PASS;
 // --------------------------------------------------------------------------------------------------
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: { user: SMTP_USER, pass: SMTP_PASS }
+  host:process.env.SMTP_HOST,
+  port:process.env.SMTP_PORT,
+  secure:false,
+  auth: { user:process.env.SMTP_USER, pass:process.env.SMTP_PASS }
 });
 
 app.post('/api/contact', async (req, res) => {
